@@ -1,6 +1,7 @@
 package com.leetCode.day3;
 
 /**
+ * 美团面试
  * 给定一个只由小写字母（a~z)组成的字符串str,返回其中最长无重复字符的子串长度。
  */
 public class getMaxNoRepeatStr {

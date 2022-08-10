@@ -3,6 +3,7 @@ package com.leetCode.day2;
 import java.util.Arrays;
 
 /**
+ * 阿里面试
  * 输入一个int类型的值N，构造一个长度为N的数组arr并返回要求：对于任意的i<k<j,都满足arr[i] + arr[j] != arr[k] * 2
  */
 public class ArrayBuild {
