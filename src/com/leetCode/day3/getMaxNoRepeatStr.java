@@ -6,7 +6,7 @@ package com.leetCode.day3;
  */
 public class getMaxNoRepeatStr {
     public static void main(String[] args) {
-        System.out.println(lnrs("zxzcv"));
+        System.out.println(lnrs("abcabcbb"));
     }
 
     public static int lnrs(String s) {
@@ -31,7 +31,7 @@ public class getMaxNoRepeatStr {
         //dp[i-1] 的值
         int preMaxLen = 1;
         for (int i = 1; i < N; i++) {
-            preMaxLen = Math.min(i - last[str[i] - 'a'],  + 1);
+            preMaxLen = Math.min(i - last[str[i] - 'a'],  preMaxLen+ 1);
             max = Math.max(max, preMaxLen);
             last[str[i] - 'a'] = i;
         }
